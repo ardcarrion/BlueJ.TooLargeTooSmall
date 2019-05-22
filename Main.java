@@ -31,18 +31,18 @@ public class Main
         int guess = in.nextInt();
         int lastGuess = guess;
         int correctNumber = 42;
-        boolean firstMove = true;
+        //boolean firstMove = true;
         while (guess != correctNumber) {
-            if (!firstMove && (guess == lastGuess)) {
-                break;
-            } else if (guess < correctNumber) {
-                System.out.println("Whoops, that's too small!");
-            } else {
+          if (guess < correctNumber) {
+                System.out.println("Whoops, that's too small!");         
+          } else {
                 System.out.println("Whoops, that's too big!");
-            }
-            
-            
+          }
+          System.out.println("Try again please: ");
+          lastGuess = guess;
+          guess = in.nextInt();
         }
+            
         System.out.println("Congratulations! That's the right number!");
 
     }
