@@ -5,29 +5,56 @@
  * @author (your name)
  * @version (a version number or a date)
  */
+
+import java.util.Scanner;
+
 public class Main
 {
     // instance variables - replace the example below with your own
-    private int x;
-
+    private int guessedNumber;
+    private int lastGuess;
+    private int correctNumber;
+    private boolean won;
+            
     /**
-     * Constructor for objects of class Main
+     * Constructor for obects of class Main 
      */
-    public Main()
+    public Main(int guess) 
     {
-        // initialise instance variables
-        x = 0;
+       ;
+    }
+    
+    public static void main(String[] args) 
+    {
+        System.out.println("Guess the mystery number!");
+        Scanner in = new Scanner(System.in);
+        int guess = in.nextInt();
+        int lastGuess = guess;
+        int correctNumber = 42;
+        boolean firstMove = true;
+        while (guess != correctNumber) {
+            if (!firstMove && (guess == lastGuess)) {
+                break;
+            } else if (guess < correctNumber) {
+                System.out.println("Whoops, that's too small!");
+            } else {
+                System.out.println("Whoops, that's too big!");
+            }
+            
+            
+        }
+        System.out.println("Congratulations! That's the right number!");
+
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Start playing the TooLargeTooSmall game
      */
-    public int sampleMethod(int y)
+    
+    private void startGame()
     {
         // put your code here
-        return x + y;
+        return;
     }
+    
 }
