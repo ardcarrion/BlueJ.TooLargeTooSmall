@@ -1,11 +1,8 @@
 #BlueJ class context
 comment0.target=Main
-comment1.params=guess
-comment1.target=Main(int)
-comment1.text=\n\ Constructor\ for\ obects\ of\ class\ Main\ \n
-comment2.params=args
-comment2.target=void\ main(java.lang.String[])
-comment3.params=
-comment3.target=void\ startGame()
-comment3.text=\n\ Start\ playing\ the\ TooLargeTooSmall\ game\n
-numComments=4
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ startGame()
+comment2.text=\n\ Start\ playing\ the\ TooLargeTooSmall\ game\n
+numComments=3
