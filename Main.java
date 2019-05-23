@@ -10,20 +10,11 @@ import java.util.Scanner;
 
 public class Main
 {
-    // instance variables - replace the example below with your own
     private int guessedNumber;
     private int lastGuess;
     private int correctNumber;
     private boolean won;
             
-    /**
-     * Constructor for obects of class Main 
-     */
-    public Main(int guess) 
-    {
-       ;
-    }
-    
     public static void main(String[] args) 
     {
         System.out.println("Guess the mystery number!");
