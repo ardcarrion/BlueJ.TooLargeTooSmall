@@ -17,11 +17,14 @@ public class Main
             
     public static void main(String[] args) 
     {
-        System.out.println("Guess the mystery number!");
+        
+        double mysteryNumber = 100*Math.random();
+        int correctNumber = (int)Math.floor(mysteryNumber);
+        System.out.println("Guess the mystery number between 0 and 100");
         Scanner in = new Scanner(System.in);
         int guess = in.nextInt();
         int lastGuess = guess;
-        int correctNumber = 42;
+        
         boolean firstMove = true;
         while (guess != correctNumber) {
           if (!firstMove && guess == lastGuess) {
