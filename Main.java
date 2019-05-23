@@ -24,6 +24,7 @@ public class Main
         Scanner in = new Scanner(System.in);
         int guess = in.nextInt();
         int lastGuess = guess;
+        int totalGuesses = 1;
         
         boolean firstMove = true;
         while (guess != correctNumber) {
@@ -31,6 +32,7 @@ public class Main
               System.out.println();
           } else { 
               firstMove = false;
+              
               if (guess < correctNumber) {
                     System.out.println("Whoops, that's too small!");         
               } else {
@@ -41,9 +43,11 @@ public class Main
 
           lastGuess = guess;
           guess = in.nextInt();
+          totalGuesses++;
         }
             
         System.out.println("Congratulations! That's the right number!");
+        System.out.printf("It took you %d guesses.\n", totalGuesses);
 
     }
 
